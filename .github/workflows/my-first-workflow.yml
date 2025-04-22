@@ -1,0 +1,13 @@
+name: Hello Action for Beginners 
+
+on: push
+
+jobs:
+  say-hello:
+    runs-on: macos-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions"
+
+      - name: Show Date
+        run: date
